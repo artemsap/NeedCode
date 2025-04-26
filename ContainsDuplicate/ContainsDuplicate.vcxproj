@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cf5dbbb6-3509-4c7c-9cd3-07ee90db3823}</ProjectGuid>
-    <RootNamespace>NeedCode</RootNamespace>
+    <ProjectGuid>{b8dc2fb6-4afb-4946-a48e-a802b183bfea}</ProjectGuid>
+    <RootNamespace>ContainsDuplicate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="NeedCode.cpp" />
+    <ClCompile Include="ContainsDuplicate.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
