@@ -1,52 +1,52 @@
-﻿#include <iostream>
+﻿#include <map>
+#include <string>
+#include <algorithm>
 #include <vector>
+#include <iostream>
 
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int>& nums, int target)
+    std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& strs) 
     {
-        for (int i = 0; i < nums.size(); i++)
+        std::map<std::string, std::vector<std::string>> mapka;
+
+        for (const auto& str : strs)
         {
-            for (int j = i + 1; j < nums.size(); j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    return std::vector<int>{i, j};
-                }
-            }
+            auto str_copy = str;
+            sort(str_copy.begin(), str_copy.end());
+            mapka[str_copy].push_back(str);
         }
 
-        return std::vector<int>{-1, -1};
+        std::vector<std::vector<std::string>> result;
+        for (auto& vectors : mapka)
+        {
+            result.push_back(vectors.second);
+        }
+
+        return result;
     }
 };
+
+void printResult(std::vector<std::vector<std::string>>& result)
+{
+    for (const auto& group : result)
+    {
+        for (const auto& element : group)
+        {
+            std::cout << element << ' ';
+        }
+
+        std::cout << std::endl;
+    }
+}
 
 int main()
 {
     Solution solution;
 
-    std::vector<int> nums{ 3, 4, 5, 6 };
-    int target = 7;
-    for (const auto& num : solution.twoSum(nums, target))
-    {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-
-    std::vector<int> nums2{ 4, 5, 6 };
-    int target2 = 10;
-    for (const auto& num : solution.twoSum(nums2, target2))
-    {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-
-    std::vector<int> nums3{ 5, 5 };
-    int target3 = 10;
-    for (const auto& num : solution.twoSum(nums3, target3))
-    {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
+    std::vector<std::string> str{ "act","pots","tops","cat","stop","hat" };
+    auto result = solution.groupAnagrams(str);
+    printResult(result);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

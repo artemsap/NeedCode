@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContainsDuplicate", "ContainsDuplicate\ContainsDuplicate.vcxproj", "{B8DC2FB6-4AFB-4946-A48E-A802B183BFEA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays&Hashing", "Arrays&Hashing", "{FEBE521C-94E5-4761-B6A3-61EE45078138}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TwoSum", "TwoSum\TwoSum.vcxproj", "{32833557-09CC-4A91-979D-BD331D5A98A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.vcxproj", "{5C2B542C-6212-4FFF-9B15-43AD370B348C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,14 @@ Global
 		{32833557-09CC-4A91-979D-BD331D5A98A4}.Release|x64.Build.0 = Release|x64
 		{32833557-09CC-4A91-979D-BD331D5A98A4}.Release|x86.ActiveCfg = Release|Win32
 		{32833557-09CC-4A91-979D-BD331D5A98A4}.Release|x86.Build.0 = Release|Win32
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Debug|x64.ActiveCfg = Debug|x64
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Debug|x64.Build.0 = Debug|x64
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Debug|x86.Build.0 = Debug|Win32
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Release|x64.ActiveCfg = Release|x64
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Release|x64.Build.0 = Release|x64
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Release|x86.ActiveCfg = Release|Win32
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +61,9 @@ Global
 		{B8DC2FB6-4AFB-4946-A48E-A802B183BFEA} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{56F286FB-E739-4A26-8384-9CD8D5B4FEEA} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{32833557-09CC-4A91-979D-BD331D5A98A4} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
+		{5C2B542C-6212-4FFF-9B15-43AD370B348C} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
 	EndGlobalSection
 EndGlobal
