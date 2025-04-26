@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EncodeAndDecodeStrings", "E
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProductsOfArrayExceptSelf", "ProductsOfArrayExceptSelf\ProductsOfArrayExceptSelf.vcxproj", "{A6A82547-3FFF-4FD1-B4A1-08140C88833D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValidSudoku", "ValidSudoku\ValidSudoku.vcxproj", "{15CAB485-3919-48FC-AC49-454672FAA983}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -83,6 +85,14 @@ Global
 		{A6A82547-3FFF-4FD1-B4A1-08140C88833D}.Release|x64.Build.0 = Release|x64
 		{A6A82547-3FFF-4FD1-B4A1-08140C88833D}.Release|x86.ActiveCfg = Release|Win32
 		{A6A82547-3FFF-4FD1-B4A1-08140C88833D}.Release|x86.Build.0 = Release|Win32
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Debug|x64.ActiveCfg = Debug|x64
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Debug|x64.Build.0 = Debug|x64
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Debug|x86.ActiveCfg = Debug|Win32
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Debug|x86.Build.0 = Debug|Win32
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x64.ActiveCfg = Release|x64
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x64.Build.0 = Release|x64
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x86.ActiveCfg = Release|Win32
+		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +105,7 @@ Global
 		{C4C79F5B-2A16-440B-B7BB-15C68822F7F7} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{C84CF191-B091-4296-9A1C-DCBA5041AFA2} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{A6A82547-3FFF-4FD1-B4A1-08140C88833D} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
+		{15CAB485-3919-48FC-AC49-454672FAA983} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
