@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProductsOfArrayExceptSelf",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValidSudoku", "ValidSudoku\ValidSudoku.vcxproj", "{15CAB485-3919-48FC-AC49-454672FAA983}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LongestConsecutiveSequence", "LongestConsecutiveSequence\LongestConsecutiveSequence.vcxproj", "{B78C63A7-D888-455D-93D8-224D12C1091D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -93,6 +95,14 @@ Global
 		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x64.Build.0 = Release|x64
 		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x86.ActiveCfg = Release|Win32
 		{15CAB485-3919-48FC-AC49-454672FAA983}.Release|x86.Build.0 = Release|Win32
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Debug|x64.ActiveCfg = Debug|x64
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Debug|x64.Build.0 = Debug|x64
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Debug|x86.Build.0 = Debug|Win32
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Release|x64.ActiveCfg = Release|x64
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Release|x64.Build.0 = Release|x64
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Release|x86.ActiveCfg = Release|Win32
+		{B78C63A7-D888-455D-93D8-224D12C1091D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +116,7 @@ Global
 		{C84CF191-B091-4296-9A1C-DCBA5041AFA2} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{A6A82547-3FFF-4FD1-B4A1-08140C88833D} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{15CAB485-3919-48FC-AC49-454672FAA983} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
+		{B78C63A7-D888-455D-93D8-224D12C1091D} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
