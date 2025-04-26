@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GroupAnagrams", "GroupAnagr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TopKFrequentElements", "TopKFrequentElements\TopKFrequentElements.vcxproj", "{C4C79F5B-2A16-440B-B7BB-15C68822F7F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EncodeAndDecodeStrings", "EncodeAndDecodeStrings\EncodeAndDecodeStrings.vcxproj", "{C84CF191-B091-4296-9A1C-DCBA5041AFA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,14 @@ Global
 		{C4C79F5B-2A16-440B-B7BB-15C68822F7F7}.Release|x64.Build.0 = Release|x64
 		{C4C79F5B-2A16-440B-B7BB-15C68822F7F7}.Release|x86.ActiveCfg = Release|Win32
 		{C4C79F5B-2A16-440B-B7BB-15C68822F7F7}.Release|x86.Build.0 = Release|Win32
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Debug|x64.ActiveCfg = Debug|x64
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Debug|x64.Build.0 = Debug|x64
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Debug|x86.ActiveCfg = Debug|Win32
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Debug|x86.Build.0 = Debug|Win32
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Release|x64.ActiveCfg = Release|x64
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Release|x64.Build.0 = Release|x64
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Release|x86.ActiveCfg = Release|Win32
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +83,7 @@ Global
 		{32833557-09CC-4A91-979D-BD331D5A98A4} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{5C2B542C-6212-4FFF-9B15-43AD370B348C} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 		{C4C79F5B-2A16-440B-B7BB-15C68822F7F7} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
+		{C84CF191-B091-4296-9A1C-DCBA5041AFA2} = {FEBE521C-94E5-4761-B6A3-61EE45078138}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
