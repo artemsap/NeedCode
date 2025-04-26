@@ -28,22 +28,24 @@ public:
     }
 };
 
+void printIntVector(const std::vector<int>& nums)
+{
+    for (const auto& num : nums)
+    {
+        std::cout << num << ' ';
+    }
+    std::cout << std::endl;
+}
+
 int main()
 {
     Solution solution;
 
     std::vector<int> nums{ 1,2,2,3,3,3 };
-    for (const auto& element : solution.topKFrequent(nums, 2))
-    {
-        std::cout << element << " ";
-    }
-    std::cout << std::endl;
+    auto result = solution.topKFrequent(nums, 2);
+    printIntVector(result);
 
     std::vector<int> nums2{ 7, 7 };
-    for (const auto& element : solution.topKFrequent(nums2, 1))
-    {
-        std::cout << element << " ";
-    }
-    std::cout << std::endl;
-
+    auto result2 = solution.topKFrequent(nums2, 1);
+    printIntVector(result2);
 }
