@@ -14,7 +14,7 @@ private:
         {
             char c = bitset_[i];
 
-            if (c == 1)
+            if (c == 0)
             {
                 mystack.push(c);
             }
@@ -35,9 +35,9 @@ private:
     std::string BitsetToSkobki(std::bitset<32> bitset_, int stringsize)
     {
         std::string skobki(stringsize, ' ');
-        for (int i = stringsize - 1; i >= 0; i--)
+        for (int i = 0; i < stringsize; i++)
         {
-            if (bitset_[i] == 1)
+            if (bitset_[i] == 0)
             {
                 skobki[i] = '(';
             }
@@ -56,10 +56,22 @@ public:
 
         std::vector<std::bitset<32>> bitset_skobka;
 
-        for (size_t i = 0; i < std::pow(2, string_size); i++)
+        int min = 0;
+        int max = 0;
+        for (size_t i = 0; i < n; i++)
+        {
+            min = min << 2;
+            min += 1;
+            max = max << 1;
+            max += 1;
+        }
+        max = max << n;
+
+        for (size_t i = min; i <= max; i++)
         {
             auto bitset = std::bitset<32>(i);
-            if (isValid(bitset, string_size))
+
+            if (isValid(bitset, string_size) && bitset.count() == n)
             {
                 bitset_skobka.push_back(bitset);
             }
