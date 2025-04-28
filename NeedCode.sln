@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValidParentheses", "ValidPa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinStack", "MinStack\MinStack.vcxproj", "{53133403-AFFF-4249-8954-380F13DB8FE5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EvaluateReversePolishNotation", "EvaluateReversePolishNotation\EvaluateReversePolishNotation.vcxproj", "{B3F1F488-87ED-4FC2-9B77-F22219155A7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -167,6 +169,14 @@ Global
 		{53133403-AFFF-4249-8954-380F13DB8FE5}.Release|x64.Build.0 = Release|x64
 		{53133403-AFFF-4249-8954-380F13DB8FE5}.Release|x86.ActiveCfg = Release|Win32
 		{53133403-AFFF-4249-8954-380F13DB8FE5}.Release|x86.Build.0 = Release|Win32
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Debug|x64.ActiveCfg = Debug|x64
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Debug|x64.Build.0 = Debug|x64
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Debug|x86.Build.0 = Debug|Win32
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Release|x64.ActiveCfg = Release|x64
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Release|x64.Build.0 = Release|x64
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Release|x86.ActiveCfg = Release|Win32
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,6 +197,7 @@ Global
 		{68306E71-4520-4F1A-A6AB-7A3CD3399D25} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{1E3D7EA4-1C20-4DEA-945D-1C6CE6C9097C} = {532CDBE8-DB18-4BF9-89DD-5BEEF98A276F}
 		{53133403-AFFF-4249-8954-380F13DB8FE5} = {532CDBE8-DB18-4BF9-89DD-5BEEF98A276F}
+		{B3F1F488-87ED-4FC2-9B77-F22219155A7D} = {532CDBE8-DB18-4BF9-89DD-5BEEF98A276F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
