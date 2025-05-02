@@ -7,7 +7,7 @@ public:
     int maxArea(std::vector<int>& heights)
     {
         int maxArea = 0;
-        for (int left = 0, right = heights.size() - 1; left < right;)
+        for (int left = 0, right = (int)heights.size() - 1; left < right;)
         {
             int area = (right - left) * std::min(heights[left], heights[right]);
             maxArea = std::max(area, maxArea);

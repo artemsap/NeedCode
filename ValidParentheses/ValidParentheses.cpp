@@ -22,6 +22,7 @@ private:
             return '[';
         if (c == '}')
             return '{';
+        return ' ';
     }
 
 public:

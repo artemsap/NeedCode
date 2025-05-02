@@ -6,7 +6,7 @@ class Solution
 public:
     std::vector<int> twoSum(std::vector<int>& numbers, int target)
     {
-        for(int left = 0, right = numbers.size() - 1; left < right;)
+        for(int left = 0, right = (int)numbers.size() - 1; left < right;)
         {
             int sum = numbers[left] + numbers[right];
             if (sum == target)
