@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <stack>
 
 class Solution 
 {
@@ -8,15 +9,17 @@ public:
     {
         std::vector<int> warmerTemperatures(temperatures.size(), 0);
 
-        for (size_t i = 0; i < temperatures.size(); i++)
+        std::stack<std::pair<size_t, int>> index_temp;
+        for (int i = 0; i < temperatures.size() - 1; i++)
         {
-            for (size_t j = i; j < temperatures.size(); j++)
+            index_temp.emplace(std::make_pair(i, temperatures[i]));
+
+            size_t nextIndex = i + 1;
+            while (!index_temp.empty() && index_temp.top().second < temperatures[nextIndex])
             {
-                if (temperatures[j] > temperatures[i])
-                {
-                    warmerTemperatures[i] = j - i;
-                    break;
-                }
+                size_t index = index_temp.top().first;
+                warmerTemperatures[index] = nextIndex - index;
+                index_temp.pop();
             }
         }
 
@@ -37,7 +40,7 @@ int main()
 {
     Solution solution;
 
-    std::vector<int> temperatures{ 30, 38, 30, 36, 35, 40, 28 };
+    std::vector<int> temperatures{ 30,40,50,60 };
     auto res = solution.dailyTemperatures(temperatures);
     printVectorInt(res);
 }
