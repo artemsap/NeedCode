@@ -7,28 +7,26 @@ class Solution
 public:
     int search(std::vector<int>& nums, int target) 
     {
-        std::sort(nums.rbegin(), nums.rend());
-
         int left = 0;
-        int right = (int)nums.size();
+        int right = (int)nums.size() - 1;
 
         while (left < right)
         {
-            int m_index = (right + left) / 2;
+            int m_index = (right + left + 1) / 2;
 
             if (nums[m_index] <= target)
             {
-                right = m_index;
+                left = m_index;
             }
             else
             {
-                left = m_index + 1;
+                right = m_index - 1;
             }
         }
 
         if (nums[left] == target)
         {
-            return nums.size() - left - 1;
+            return left;
         }
         else
         {
@@ -41,6 +39,12 @@ int main()
 {
     Solution solution;
 
-    std::vector<int> nums = { -1,0,3,5,9,12 };
-    std::cout << solution.search(nums, 9) << std::endl;
+    std::vector<int> nums = { 5 };
+    std::cout << solution.search(nums, 5) << std::endl;
+
+    std::vector<int> nums2 = { -1,0,2,4,6,8 };
+    std::cout << solution.search(nums2, 4) << std::endl;
+
+    std::vector<int> nums3 = { -1,0,2,4,6,8 };
+    std::cout << solution.search(nums2, 3) << std::endl;
 }
