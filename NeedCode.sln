@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinarySearch", "BinarySearc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Search2DMatrix", "Search2DMatrix\Search2DMatrix.vcxproj", "{098B300F-B9E9-46D6-9121-106C4B3C59EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KokoEatingBananas", "KokoEatingBananas\KokoEatingBananas.vcxproj", "{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -219,6 +221,14 @@ Global
 		{098B300F-B9E9-46D6-9121-106C4B3C59EF}.Release|x64.Build.0 = Release|x64
 		{098B300F-B9E9-46D6-9121-106C4B3C59EF}.Release|x86.ActiveCfg = Release|Win32
 		{098B300F-B9E9-46D6-9121-106C4B3C59EF}.Release|x86.Build.0 = Release|Win32
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Debug|x64.ActiveCfg = Debug|x64
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Debug|x64.Build.0 = Debug|x64
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Debug|x86.Build.0 = Debug|Win32
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Release|x64.ActiveCfg = Release|x64
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Release|x64.Build.0 = Release|x64
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Release|x86.ActiveCfg = Release|Win32
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -244,6 +254,7 @@ Global
 		{F7229A6F-9FE7-4CB8-8297-09D541DE882B} = {532CDBE8-DB18-4BF9-89DD-5BEEF98A276F}
 		{130EA89F-D85D-4EE4-8627-202B55923780} = {841B3FDD-35D5-41F4-A76E-3F17179EE5FD}
 		{098B300F-B9E9-46D6-9121-106C4B3C59EF} = {841B3FDD-35D5-41F4-A76E-3F17179EE5FD}
+		{F61F481A-9B09-4B7E-86B2-269B0DAC4D1E} = {841B3FDD-35D5-41F4-A76E-3F17179EE5FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
