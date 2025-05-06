@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <map>
 #include <unordered_map>
 
 class TimeMap 
@@ -12,21 +11,45 @@ public:
 
     void set(std::string key, std::string value, int timestamp)
     {
-        time[key][timestamp] = value;
+        time[key].emplace_back(std::make_pair(timestamp, value));
     }
 
     std::string get(std::string key, int timestamp)
     {
-        auto it = time[key].upper_bound(timestamp);
-
-        if (it == time[key].begin())
+        if (time.find(key) == time.end())
             return "";
-        else
-            return std::prev(it)->second;
+
+        const auto& vec = time[key];
+
+        std::string res = "";
+        int left = 0;
+        int right = vec.size() - 1;
+
+        while (left < right)
+        {
+            int m_index = (right + left + 1) / 2;
+
+            if (vec[m_index].first <= timestamp)
+            {
+                res = vec[m_index].second;
+                left = m_index;
+            }
+            else
+            {
+                right = m_index - 1;
+            }
+        }
+
+        if (res == "" && vec[0].first <= timestamp)
+        {
+            res = vec[0].second;
+        }
+
+        return res;
     }
 
 private:
-    std::unordered_map<std::string, std::map<int, std::string>> time;
+    std::unordered_map<std::string, std::vector<std::pair<int, std::string>>> time;
 };
 
 
