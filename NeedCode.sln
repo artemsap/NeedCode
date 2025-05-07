@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BestTimeToBuyAndSellStock",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LongestSubstringWithourRepeating", "LongestSubstringWithourRepeating\LongestSubstringWithourRepeating.vcxproj", "{5FC7C87E-8C02-4A3A-B072-C486B71DE05C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlidingWIndowMaximum", "SlidingWIndowMaximum\SlidingWIndowMaximum.vcxproj", "{ED0BCCE1-41D0-497E-8BA2-E865B374D786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{5FC7C87E-8C02-4A3A-B072-C486B71DE05C}.Release|x64.Build.0 = Release|x64
 		{5FC7C87E-8C02-4A3A-B072-C486B71DE05C}.Release|x86.ActiveCfg = Release|Win32
 		{5FC7C87E-8C02-4A3A-B072-C486B71DE05C}.Release|x86.Build.0 = Release|Win32
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Debug|x64.ActiveCfg = Debug|x64
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Debug|x64.Build.0 = Debug|x64
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Debug|x86.ActiveCfg = Debug|Win32
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Debug|x86.Build.0 = Debug|Win32
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Release|x64.ActiveCfg = Release|x64
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Release|x64.Build.0 = Release|x64
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Release|x86.ActiveCfg = Release|Win32
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +311,7 @@ Global
 		{3B272F1F-68BB-45C4-9194-AFAB89908F98} = {841B3FDD-35D5-41F4-A76E-3F17179EE5FD}
 		{5B51CB22-4CF2-452D-AEF5-C5EE93A107E5} = {ACCBD095-A079-4506-88AE-39C7E53D4D46}
 		{5FC7C87E-8C02-4A3A-B072-C486B71DE05C} = {ACCBD095-A079-4506-88AE-39C7E53D4D46}
+		{ED0BCCE1-41D0-497E-8BA2-E865B374D786} = {ACCBD095-A079-4506-88AE-39C7E53D4D46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
