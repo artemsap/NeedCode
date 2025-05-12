@@ -1,53 +1,47 @@
 ﻿#include <iostream>
 #include <unordered_map>
+#include <list>
 
 class LRUCache 
 {
 private:
-    std::unordered_map<int, int> lru;
-    std::unordered_map<int, int> priority;
-    int time = 0;
+    std::list<int> priorities;
+    std::unordered_map<int, std::pair<int, std::list<int>::iterator>> lru;
+
     int maxSize = 0;
+
 public:
     LRUCache(int capacity) : maxSize(capacity)
     {
-        lru.reserve(capacity);
-        priority.reserve(capacity);
     }
 
     int get(int key) 
     {
-        auto find = lru.find(key);
-
         if (lru.find(key) == lru.end())
         {
             return -1;
         }
         
-        priority[key] = time++;
-        return lru[key];
+        priorities.erase(lru[key].second);
+        priorities.push_back(key);
+
+        return lru[key].first;
     }
 
     void put(int key, int value)
     {
-        if (lru.size() >= maxSize && lru.find(key) == lru.end())
+        if (lru.find(key) != lru.end())
         {
-            int minPriority = time;
-            int minKey;
-            for (const auto& l : priority)
-            {
-                if (l.second < minPriority)
-                {
-                    minPriority = l.second;
-                    minKey = l.first;
-                }
-            }
-            lru.erase(minKey);
-            priority.erase(minKey);
+            priorities.erase(lru[key].second);
+        }
+        else if (lru.size() >= maxSize)
+        {
+            lru.erase(priorities.front());
+            priorities.erase(priorities.begin());
         }
 
-        lru[key] = value;
-        priority[key] = time++;
+        priorities.push_back(key);
+        lru[key] = std::make_pair(value, --priorities.end());
     }
 };
 
