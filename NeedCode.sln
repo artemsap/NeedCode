@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaximumDepthOfBinaryTree", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiameterOfBinaryTree", "DiameterOfBinaryTree\DiameterOfBinaryTree.vcxproj", "{D6C46129-124F-49DB-B883-237562EC98AE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BalancedBinaryTree", "BalancedBinaryTree\BalancedBinaryTree.vcxproj", "{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -395,6 +397,14 @@ Global
 		{D6C46129-124F-49DB-B883-237562EC98AE}.Release|x64.Build.0 = Release|x64
 		{D6C46129-124F-49DB-B883-237562EC98AE}.Release|x86.ActiveCfg = Release|Win32
 		{D6C46129-124F-49DB-B883-237562EC98AE}.Release|x86.Build.0 = Release|Win32
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Debug|x64.ActiveCfg = Debug|x64
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Debug|x64.Build.0 = Debug|x64
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Debug|x86.Build.0 = Debug|Win32
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x64.ActiveCfg = Release|x64
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x64.Build.0 = Release|x64
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x86.ActiveCfg = Release|Win32
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -437,6 +447,7 @@ Global
 		{CA6B0E3B-5B6C-4670-8BD0-6DAFE6A16FCF} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{933B5FAE-6057-4A6A-9A8F-8A968EE817AF} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{D6C46129-124F-49DB-B883-237562EC98AE} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
+		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
