@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiameterOfBinaryTree", "Dia
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BalancedBinaryTree", "BalancedBinaryTree\BalancedBinaryTree.vcxproj", "{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SameBinaryTree", "SameBinaryTree\SameBinaryTree.vcxproj", "{CC90BD73-1475-43CD-88AF-190966506AF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -405,6 +407,14 @@ Global
 		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x64.Build.0 = Release|x64
 		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x86.ActiveCfg = Release|Win32
 		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0}.Release|x86.Build.0 = Release|Win32
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Debug|x64.ActiveCfg = Debug|x64
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Debug|x64.Build.0 = Debug|x64
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Debug|x86.Build.0 = Debug|Win32
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Release|x64.ActiveCfg = Release|x64
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Release|x64.Build.0 = Release|x64
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Release|x86.ActiveCfg = Release|Win32
+		{CC90BD73-1475-43CD-88AF-190966506AF1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -448,6 +458,7 @@ Global
 		{933B5FAE-6057-4A6A-9A8F-8A968EE817AF} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{D6C46129-124F-49DB-B883-237562EC98AE} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
+		{CC90BD73-1475-43CD-88AF-190966506AF1} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
