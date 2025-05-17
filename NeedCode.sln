@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SameBinaryTree", "SameBinar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LowestCommonAncestor", "LowestCommonAncestor\LowestCommonAncestor.vcxproj", "{E4378B1D-EA3A-4E74-B54F-C3608B219BAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeLevelOrderTraversal", "BinaryTreeLevelOrderTraversal\BinaryTreeLevelOrderTraversal.vcxproj", "{C1285B17-8384-4C79-AFF4-B2E02A3A6464}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -425,6 +427,14 @@ Global
 		{E4378B1D-EA3A-4E74-B54F-C3608B219BAC}.Release|x64.Build.0 = Release|x64
 		{E4378B1D-EA3A-4E74-B54F-C3608B219BAC}.Release|x86.ActiveCfg = Release|Win32
 		{E4378B1D-EA3A-4E74-B54F-C3608B219BAC}.Release|x86.Build.0 = Release|Win32
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Debug|x64.ActiveCfg = Debug|x64
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Debug|x64.Build.0 = Debug|x64
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Debug|x86.ActiveCfg = Debug|Win32
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Debug|x86.Build.0 = Debug|Win32
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Release|x64.ActiveCfg = Release|x64
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Release|x64.Build.0 = Release|x64
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Release|x86.ActiveCfg = Release|Win32
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -470,6 +480,7 @@ Global
 		{A397C2E7-CB2F-47D5-A8EA-C15A984A5AC0} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{CC90BD73-1475-43CD-88AF-190966506AF1} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 		{E4378B1D-EA3A-4E74-B54F-C3608B219BAC} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
+		{C1285B17-8384-4C79-AFF4-B2E02A3A6464} = {EEE6339D-DA4C-4CFE-A1ED-7EE8C55478D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
