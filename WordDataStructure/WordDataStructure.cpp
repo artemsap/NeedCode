@@ -1,8 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
-#include <memory>
 
-class PrefixTree
+class WordDictionary
 {
 private:
     class TreeNode
@@ -26,16 +25,17 @@ private:
     };
 
     std::shared_ptr<TreeNode> root = nullptr;
+
 public:
-    PrefixTree()
+    WordDictionary() 
     {
         root = std::make_shared<TreeNode>();
         root->value = ' ';
     }
 
-    void insert(std::string word) 
+    void addWord(std::string word) 
     {
-        insert(this->root, word);
+        insert(root, word);
     }
 
     bool search(std::string word) 
@@ -44,13 +44,8 @@ public:
         return searchWord(root, word);
     }
 
-    bool startsWith(std::string prefix) 
-    {
-        return searchWord(root, prefix);
-    }
-
 private:
-    void insert(std::shared_ptr<TreeNode> local_root, std::string word)
+    static void insert(std::shared_ptr<TreeNode> local_root, std::string word)
     {
         if (word.empty())
         {
@@ -78,7 +73,24 @@ private:
             return true;
         }
 
-        if (auto find = local_root->findChildren(word.front()); find)
+        char first_symbol = word.front();
+
+        if (first_symbol == '.')
+        {
+            bool res = false;
+            auto cut_str = word.substr(1);
+            for (const auto child : local_root->childrens)
+            {
+                res |= searchWord(child, cut_str);
+
+                if (res)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        else if (auto find = local_root->findChildren(first_symbol); find)
         {
             return searchWord(find, word.substr(1));
         }
@@ -92,13 +104,15 @@ private:
 
 int main()
 {
-    PrefixTree tree;
-    tree.insert("Hello");
-    tree.insert("Hella");
+    WordDictionary wordDictionary;
+    wordDictionary.addWord("dog");
+    //wordDictionary.addWord("bay");
+    //wordDictionary.addWord("may");
+    //std::cout << wordDictionary.search("say") << std::endl; // return false
+    //std::cout << wordDictionary.search("day") << std::endl; // return true
+    //std::cout << wordDictionary.search(".ay") << std::endl; // return true
+    //std::cout << wordDictionary.search("b..") << std::endl; // return true
+    std::cout << wordDictionary.search("do..");
 
-    auto res = tree.search("Hello");
-    auto res2 = tree.search("Helle");
-    auto res3 = tree.startsWith("He");
-    auto res4 = tree.startsWith("Ho");
-
+    std::cout << "Hello World!\n";
 }
