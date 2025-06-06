@@ -125,6 +125,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeetingRooms", "MeetingRoom
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertInterval", "InsertInterval\InsertInterval.vcxproj", "{B4B80856-6180-4021-91D6-976D12A7BAF5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeIntervals", "MergeIntervals\MergeIntervals.vcxproj", "{56100F67-67B6-4A85-8104-CB64735022AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -541,6 +543,14 @@ Global
 		{B4B80856-6180-4021-91D6-976D12A7BAF5}.Release|x64.Build.0 = Release|x64
 		{B4B80856-6180-4021-91D6-976D12A7BAF5}.Release|x86.ActiveCfg = Release|Win32
 		{B4B80856-6180-4021-91D6-976D12A7BAF5}.Release|x86.Build.0 = Release|Win32
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Debug|x64.ActiveCfg = Debug|x64
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Debug|x64.Build.0 = Debug|x64
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Debug|x86.ActiveCfg = Debug|Win32
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Debug|x86.Build.0 = Debug|Win32
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Release|x64.ActiveCfg = Release|x64
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Release|x64.Build.0 = Release|x64
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Release|x86.ActiveCfg = Release|Win32
+		{56100F67-67B6-4A85-8104-CB64735022AC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -597,6 +607,7 @@ Global
 		{40A8CC26-DC58-467C-B737-311E2E98F66A} = {3C3DFB0D-28C9-46E8-957D-993EB453552B}
 		{1A66A6E1-7090-4935-BE5B-1DEAEE13588D} = {729D246F-A674-462F-A000-56E88EC3BEC0}
 		{B4B80856-6180-4021-91D6-976D12A7BAF5} = {729D246F-A674-462F-A000-56E88EC3BEC0}
+		{56100F67-67B6-4A85-8104-CB64735022AC} = {729D246F-A674-462F-A000-56E88EC3BEC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {282FA4F8-FAB6-4680-B4C7-F4406F1EF4F4}
