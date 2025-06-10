@@ -7,7 +7,7 @@ class Solution
 public:
     int maxSubArray(std::vector<int>& nums)
     {
-        int localmaxSum = 0, globalmaxSum = -100000000;
+        int localmaxSum = 0, globalmaxSum = nums[0];
         for (size_t i = 0; i < nums.size(); i++)
         {
             localmaxSum += nums[i];
@@ -22,8 +22,6 @@ public:
         return globalmaxSum;
     }
 };
-
-
 
 int main()
 {
