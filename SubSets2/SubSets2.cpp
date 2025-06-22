@@ -2,36 +2,34 @@
 #include <vector>
 #include <algorithm>
 
-class Solution
-{
-private:
-    void backtracking(size_t index, std::vector<int>& localsubset, std::vector<std::vector<int>>& subsets, const std::vector<int>& nums)
+class Solution {
+public:
+    void backtracking(int i, std::vector<int> localsubset, std::vector<std::vector<int>>& res, std::vector<int>& nums)
     {
-        if (index >= nums.size())
+        if (i == nums.size())
         {
-            std::sort(localsubset.begin(), localsubset.end());
-
-            if (std::find(subsets))
-            subsets.push_back(localsubset);
+            res.push_back(localsubset);
             return;
         }
 
-        localsubset.push_back(nums[index]);
-        backtracking(index + 1, localsubset, subsets, nums);
+        localsubset.push_back(nums[i]);
+        backtracking(i + 1, localsubset, res, nums);
 
         localsubset.pop_back();
-        backtracking(index + 1, localsubset, subsets, nums);
+
+        while (i + 1 < nums.size() && nums[i] == nums[i + 1])
+        {
+            i++;
+        }
+        backtracking(i + 1, localsubset, res, nums);
     }
 
-public:
-    std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums)
+    std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums) 
     {
-        //std::sort(nums.begin(), nums.end());
-
-        std::vector<std::vector<int>> subsets;
-        std::vector<int> localsubset;
-        backtracking(0, localsubset, subsets, nums);
-        return subsets;
+        std::vector<std::vector<int>> res;
+        std::sort(nums.begin(), nums.end());
+        backtracking(0, {}, res, nums);
+        return res;
     }
 };
 
